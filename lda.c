@@ -8,6 +8,8 @@ enum OPCODE{
   MOV, LDA, JMP, CALL, PUSH, POP
 };
 
+char strcmp(void* _,void*c){return _ == c;}//This might generate something "unexpected", I'm still going to test this shit
+
 char* opc[6] = {
   "mov", "lda", "jmp", "call", "push", "pop"
 };
